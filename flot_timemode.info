@@ -1,0 +1,4 @@
+name = Flot TimeMode
+description = Provides an API for the flot js graphing library.
+core = 6.x
+
