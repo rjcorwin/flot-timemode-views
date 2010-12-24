@@ -151,13 +151,17 @@ class flot_timemode_views_plugin_style extends views_plugin_style {
       return;
     }
 
+    // Make sure there is a result set otherwise exit
+    if (!$result) {
+      return;
+    }
+
     $layer = array(
       'range' => array('min' => NULL, 'max' => NULL),
       'ticks' => array(),
       'series' => array(),
       'title' => $title,
     );
-
     // Iterate over results to build data and ticks
     foreach ($result as $id => $row) {
       $datapoint = $view->field[$flot_field]->flot_render($row);
