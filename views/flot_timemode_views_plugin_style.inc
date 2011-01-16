@@ -355,6 +355,8 @@ class flot_timemode_views_plugin_style extends views_plugin_style {
     }
 
     $vars['options'] = $style;
+
+    // ENABLE TIME MODE
     $vars['options']->xaxis->mode = 'time';
     unset($vars['options']->xaxis->ticks);
 
