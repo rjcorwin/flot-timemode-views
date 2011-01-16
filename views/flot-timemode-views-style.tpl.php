@@ -11,5 +11,5 @@
 ?>
 
 <div class="views-flot">
-  <?php print theme('flot_graph', $element, $data, $options); ?>
+  <?php print theme('flot_timemode_graph', $element, $data, $options); ?>
 </div>
